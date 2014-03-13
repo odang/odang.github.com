@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://odang.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: odang’s Blog
+subtitle: 博观而约取，厚积而薄发。
+author: odang
 simple_search: https://www.google.com/search
 description:
 
@@ -63,14 +63,12 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
+github_user: odang
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
-twitter_tweet_button: true
 
 # Google +1
 google_plus_one: false
