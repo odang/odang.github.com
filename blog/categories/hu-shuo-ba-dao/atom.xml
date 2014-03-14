@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[odang’s Blog]]></title>
-  <link href="http://odang.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: 胡说八道 | odang’s Blog]]></title>
+  <link href="http://odang.github.io/blog/categories/hu-shuo-ba-dao/atom.xml" rel="self"/>
   <link href="http://odang.github.io/"/>
   <updated>2014-03-14T16:05:17+08:00</updated>
   <id>http://odang.github.io/</id>
