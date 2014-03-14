@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 胡说八道 | odang’s Blog]]></title>
   <link href="http://odang.github.io/blog/categories/hu-shuo-ba-dao/atom.xml" rel="self"/>
   <link href="http://odang.github.io/"/>
-  <updated>2014-03-14T18:27:29+08:00</updated>
+  <updated>2014-03-14T18:30:58+08:00</updated>
   <id>http://odang.github.io/</id>
   <author>
     <name><![CDATA[odang]]></name>
@@ -20,8 +20,17 @@
     <id>http://odang.github.io/blog/2014/03/13/hello</id>
     <content type="html"><![CDATA[<h1>Hello!</h1>
 
-<pre><code>NSString *str = @"hello";
+<p>```objc
+struct SampleA {</p>
+
+<pre><code>int a;
+int b;
+int c;
 </code></pre>
+
+<p>};</p>
+
+<p>```</p>
 ]]></content>
   </entry>
   
