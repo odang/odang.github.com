@@ -4,7 +4,7 @@
   <title><![CDATA[odang’s Blog]]></title>
   <link href="http://odang.github.io/atom.xml" rel="self"/>
   <link href="http://odang.github.io/"/>
-  <updated>2014-03-14T18:22:45+08:00</updated>
+  <updated>2014-03-14T18:25:40+08:00</updated>
   <id>http://odang.github.io/</id>
   <author>
     <name><![CDATA[odang]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<h1>Hello!</h1>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">NSString</span> <span class="o">*</span><span class="n">str</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="n">string</span><span class="p">];</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">NSString</span> <span class="o">*</span><span class="n">str</span> <span class="o">=</span> <span class="s">@&quot;hello&quot;</span><span class="p">;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
