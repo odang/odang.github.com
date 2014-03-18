@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Hello,Blog"
+date: 2014-03-13 23:17:08 +0800
+comments: true
+categories: 胡说八道
+
+---
+#Hello!
+
