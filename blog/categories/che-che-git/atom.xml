@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 扯扯git | odang’s Blog]]></title>
   <link href="http://odang.github.io/blog/categories/che-che-git/atom.xml" rel="self"/>
   <link href="http://odang.github.io/"/>
-  <updated>2014-03-18T17:08:25+08:00</updated>
+  <updated>2014-03-18T18:02:14+08:00</updated>
   <id>http://odang.github.io/</id>
   <author>
     <name><![CDATA[odang]]></name>
@@ -25,25 +25,59 @@
 <br />
 
 
-<p>1.安装Git<br />
-2.安装Ruby<br />
-3.注册Github帐号，进行相关设置<br />
+<p>1.准备工作<br />
+2.安装Git<br />
+3.安装Ruby<br />
 4.安装Octopress<br />
 5.配置Octopress<br /></p>
 
-<h2>1.安装Git</h2>
+<h2>1.准备工作</h2>
+
+<p>1.先到github上注册帐号。注意：帐号名最后是会关联到博客的地址的。就比如我的github帐号是<code>odang</code>，我的博客地址是<code>odan.github.io</code>。<br/>
+2.帐号注册完之后，在自己的github主页上创建一个repositories(仓库)。在主页中点击如下图红色方框所示的选项。</p>
+
+<p><img src="./2014-03-18%2017.38.21.png" alt="仓库图片" /></p>
+
+<p>跳转到另一页面之后，点击如下图红色方框所示的链接。</p>
+
+<p><img src="./2014-03-18%2017.42.09.png" alt="创建仓库" /><br/>
+接下来我们就要为仓库命名了。注意这一步很容易出错。因为教程中跟我们讲的是仓库名要与自己的帐号名一致，一些人就仅仅填写了自己的帐号名而已，这样是不对的。正确的命名是：<code>你的帐号名.github.com</code>。就比如我的github帐号为<code>odang</code>，那么我起的仓库名称就应该是<code>odang.github.com</code>。<br/>
+仓库创建好之后，会得到一个ssh，就比如我的ssh为：<code>git@github.com:odang/odang.github.com.git</code>。我们可以将它copy下来，当然也可以不用这样做，因为在后面安装过程中终端会有提示。<br/>
+接下来，我们先离开github，在终端中做点其他的操作。</p>
+
+<h2>2.安装Git</h2>
 
 <p>由于在之后的安装过程中需要使用到git，所以我们需要安装Git。我们可以在终端中输入<code>git --version</code>来查看git的版本，我电脑显示的内容为<code>git version 1.8.5.2 (Apple Git-48)</code>。如果在你的电脑上没有相关显示内容的话，请先安装<a href="http://git-scm.com">Git</a>。</p>
 
-<h2>2.安装Ruby</h2>
+<h2>3.安装Ruby</h2>
 
-<p>Octopress需要Ruby环境。RVM(Ruby Version Manager)负责安装和管理Ruby环境。我们可以利用RVM来轻松安装Ruby。</p>
-
-<h3>首先安装RVM</h3>
-
-<p>我们在终端中输入以下指令：<br />
+<p>Octopress需要Ruby环境。RVM(Ruby Version Manager)负责安装和管理Ruby环境。我们可以利用RVM来轻松安装Ruby。<br />
+我们先在终端中输入<code>ruby --version</code>，来确认电脑上是否安装了ruby。我的电脑显示的是<code>ruby 2.0.0p451 (2014-02-24 revision 45167) [x86_64-darwin13.0.0]</code>。如果提示ruby没有安装或者ruby的版本低于1.9.3的话，我们需要安装1.9.3或者更高的版本。<br />
+我们在终端中输入以下命令：<br />
 <code>
 curl -L https://get.rvm.io | bash -s stable --ruby
+</code>
+安装好RVM后，我们在终端中输入一下命令：
+<code>
+rvm install 1.9.3
+rvm use 1.9.3
+rvm rubygems latest
+</code>
+之后，我们就可以在终端中输入<code>ruby --version</code>确认ruby1.9.3安装好了。<br />
+参考：<a href="http://octopress.org/docs/setup/rvm/">Installing Ruby With RVM</a></p>
+
+<h2>4.安装Octopress</h2>
+
+<p>在终端中输入如下命令:
+<code>
+git clone git://github.com/imathis/octopress.git octopress
+cd octopress
+</code>
+接下来安装依赖项：
+<code>
+gem install bundler
+rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+bundle install
 </code></p>
 ]]></content>
   </entry>
