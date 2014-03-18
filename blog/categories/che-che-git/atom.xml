@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 扯扯git | odang’s Blog]]></title>
   <link href="http://odang.github.io/blog/categories/che-che-git/atom.xml" rel="self"/>
   <link href="http://odang.github.io/"/>
-  <updated>2014-03-18T15:04:15+08:00</updated>
+  <updated>2014-03-18T17:03:22+08:00</updated>
   <id>http://odang.github.io/</id>
   <author>
     <name><![CDATA[odang]]></name>
@@ -20,7 +20,31 @@
     <id>http://odang.github.io/blog/2014/03/18/ru-he-li-yong-octopressda-jian-[?]-ge-githubbo-ke</id>
     <content type="html"><![CDATA[<h2>引言</h2>
 
-<p>经过几天的时间，终于将一直想拥有的个人博客从空白搭建成现在的样子了。这期间，查了一些资料，也遇到了一些问题，总的来说，搭建还是挺方便的。下面，我将给大家讲述一下如何利用octopress搭建一个github博客。</p>
+<p>经过几天的时间，终于将一直想拥有的个人博客从空白搭建成现在的样子了。这期间，查了一些资料，也遇到了一些问题，总的来说，搭建还是挺方便的。下面，我将根据一下几个方面给大家讲述一下如何在苹果电脑上（OS X 10.9.2）利用octopress搭建一个github博客。<br /></p>
+
+<br />
+
+
+<p>1.安装Git<br />
+2.安装Ruby<br />
+3.注册Github帐号，进行相关设置<br />
+4.安装Octopress<br />
+5.配置Octopress<br /></p>
+
+<h2>1.安装Git</h2>
+
+<p>由于在之后的安装过程中需要使用到git，所以我们需要安装Git。我们可以在终端中输入<code>git --version</code>来查看git的版本，我电脑显示的内容为<code>git version 1.8.5.2 (Apple Git-48)</code>。如果在你的电脑上没有相关显示内容的话，请先安装<a href="http://git-scm.com">Git</a>。</p>
+
+<h2>2.安装Ruby</h2>
+
+<p>Octopress需要Ruby环境。RVM(Ruby Version Manager)负责安装和管理Ruby环境。我们可以利用RVM来轻松安装Ruby。</p>
+
+<h4>首先安装RVM</h4>
+
+<p>我们在终端中输入以下指令：<br />
+<code>
+curl -L https://get.rvm.io | bash -s stable --ruby
+</code></p>
 ]]></content>
   </entry>
   
