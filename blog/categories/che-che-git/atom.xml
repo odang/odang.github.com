@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 扯扯git | odang’s Blog]]></title>
   <link href="http://odang.github.io/blog/categories/che-che-git/atom.xml" rel="self"/>
   <link href="http://odang.github.io/"/>
-  <updated>2014-03-18T17:03:22+08:00</updated>
+  <updated>2014-03-18T17:06:52+08:00</updated>
   <id>http://odang.github.io/</id>
   <author>
     <name><![CDATA[odang]]></name>
@@ -39,10 +39,10 @@
 
 <p>Octopress需要Ruby环境。RVM(Ruby Version Manager)负责安装和管理Ruby环境。我们可以利用RVM来轻松安装Ruby。</p>
 
-<h4>首先安装RVM</h4>
+<h3>首先安装RVM</h3>
 
 <p>我们在终端中输入以下指令：<br />
-<code>
+<code>objc
 curl -L https://get.rvm.io | bash -s stable --ruby
 </code></p>
 ]]></content>
