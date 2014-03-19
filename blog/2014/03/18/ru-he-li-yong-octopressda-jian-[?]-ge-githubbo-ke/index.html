@@ -253,7 +253,39 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>rake new_post["title"]</span></code></pre></td></tr></table></div></figure>
 
 
-<p>其中，title是博文的文件名。</p>
+<p>其中，title是博文的文件名。上面的命令会创建出一个文件:<code>source/_posts/2011-07-03-title.markdown</code>，文件默认格式是markdown。根据路径，打开文件就可以看到如下的一些内容：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>---
+</span><span class='line'>layout: post
+</span><span class='line'>title: "title"
+</span><span class='line'>date: 2011-07-03 5:59
+</span><span class='line'>comments: true
+</span><span class='line'>categories: 
+</span><span class='line'>---</span></code></pre></td></tr></table></div></figure>
+
+
+<p>接下来，我们就可以在这个文件中写我们的博文了。完成之后，我们需要部署博文。下面是创建并部署博文的一个完整过程：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_post["New Post"]
+</span><span class='line'>rake generate
+</span><span class='line'>git add .
+</span><span class='line'>git commit -am "Some comment here." 
+</span><span class='line'>git push origin source
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
