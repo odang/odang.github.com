@@ -6,5 +6,7 @@ comments: true
 categories: 胡说八道
 
 ---
+ 
+<!--more-->
 #Hello!
 
