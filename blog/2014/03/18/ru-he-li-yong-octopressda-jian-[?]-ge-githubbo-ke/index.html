@@ -100,7 +100,8 @@
 2.安装Git<br />
 3.安装Ruby<br />
 4.安装Octopress<br />
-5.配置Octopress<br /></p>
+5.将博客部署到Github上<br />
+6.配置Octopress<br /></p>
 
 <h2>1.准备工作</h2>
 
@@ -109,8 +110,9 @@
 
 <p><img src="/images/2014/03/1.png" alt="" /></p>
 
-<p>跳转到另一页面之后，点击如下图红色方框所示的链接。
-<img src="/images/2014/03/2.png" alt="" /></p>
+<p>跳转到另一页面之后，点击如下图红色方框所示的链接。</p>
+
+<p><img src="/images/2014/03/2.png" alt="" /></p>
 
 <p>接下来我们就要为仓库命名了。注意这一步很容易出错。因为教程中跟我们讲的是仓库名要与自己的帐号名一致，一些人就仅仅填写了自己的帐号名而已，这样是不对的。正确的命名是：<code>你的帐号名.github.com</code>。就比如我的github帐号为<code>odang</code>，那么我起的仓库名称就应该是<code>odang.github.com</code>。<br/>
 仓库创建好之后，会得到一个ssh，就比如我的ssh为：<code>git@github.com:odang/odang.github.com.git</code>。我们可以将它copy下来，当然也可以不用这样做，因为在后面安装过程中终端会有提示。<br/>
@@ -153,7 +155,7 @@
 </span><span class='line'>cd octopress</span></code></pre></td></tr></table></div></figure>
 
 
-<p>接下来安装依赖项：</p>
+<p>接下来安装依赖项:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -170,6 +172,63 @@
 
 
 <p>参考：<a href="http://octopress.org/docs/setup/">Octopress Setup</a></p>
+
+<h2>5.将博客部署到Github上</h2>
+
+<p>一、我们先让Github与我们的电脑产生联系。<br/>
+新建一个终端窗口，输入如下命令：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/.ssh    #到ssh的目录
+</span><span class='line'>ls -a        #查看文件夹内的内容</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+这时候的文件夹中是没有id_rsa和id_rsa.pub这两个文件的。
+接着，我们输入如下命令：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh-keygen -t rsa -C "你的邮箱地址"    #创建密钥的命令，输入你们的邮箱地址</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+接下来会有存放路径的提示，回车即可，然后会提示输入密码和确认密码，按照提示输入就OK。
+二、绑定Github<br/>
+输入完毕后，打开id_rsa.pub，copy里面的所有内容。然后，打开<a href="https://github.com/settings/ssh">https://github.com/settings/ssh</a>，add ssh key，title随便写，再把刚才复制的内容粘贴到key中，add之后就OK了。<br/>
+三、链接Github<br/>
+这时候新建的终端窗口可以关闭了，我们重新回到octopress窗口，输入如下命令：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+上面的命令会执行一些操作，这期间会要求我们输入URL，这就是之前我说的SSH地址，我们可以根据提示输入，也可以将之前复制的地址粘贴上去。回车之后，我们继续输入命令：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+执行上面的命令后，将生成博客文件，并将博客文件复制到_deploy/下，然后将这些添加到git中，并commit和push到master分支上。稍等一段时间，我们就可以访问自己的博客了。<br/>
+不过别忘了提交博客的source，输入命令：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
+</span><span class='line'>git commit -m 'your message'
+</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这样就可以将博客的source提交到仓库的source中了。<br/>
+参考：<a href="http://octopress.org/docs/deploying/github/">Deploying to Github Pages</a><br/>
+当浏览自己博客的时候，会发现有些设置是我们不想要的，接下来我们就来配置一下octopress。</p>
+
+<h2>6.配置Octopress</h2>
 </div>
 
 
