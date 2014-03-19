@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 扯扯git | odang’s Blog]]></title>
   <link href="http://odang.github.io/blog/categories/che-che-git/atom.xml" rel="self"/>
   <link href="http://odang.github.io/"/>
-  <updated>2014-03-19T16:11:00+08:00</updated>
+  <updated>2014-03-19T16:13:13+08:00</updated>
   <id>http://odang.github.io/</id>
   <author>
     <name><![CDATA[odang]]></name>
@@ -18,7 +18,10 @@
     <link href="http://odang.github.io/blog/2014/03/18/ru-he-li-yong-octopressda-jian-%5B%3F%5D-ge-githubbo-ke/"/>
     <updated>2014-03-18T14:37:07+08:00</updated>
     <id>http://odang.github.io/blog/2014/03/18/ru-he-li-yong-octopressda-jian-[?]-ge-githubbo-ke</id>
-    <content type="html"><![CDATA[<h2>引言</h2>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<h2>引言</h2>
 
 <p>经过几天的时间，终于将一直想拥有的个人博客从空白搭建成现在的样子了。这期间，查了一些资料，也遇到了一些问题，总的来说，搭建还是挺方便的。下面，我将根据一下几个方面给大家讲述一下如何在苹果电脑上（OS X 10.9.2）利用octopress搭建一个github博客。<br/>
 1.准备工作<br/>
