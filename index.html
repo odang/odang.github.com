@@ -93,17 +93,14 @@
 
   <div class="entry-content"><h2>引言</h2>
 
-<p>经过几天的时间，终于将一直想拥有的个人博客从空白搭建成现在的样子了。这期间，查了一些资料，也遇到了一些问题，总的来说，搭建还是挺方便的。下面，我将根据一下几个方面给大家讲述一下如何在苹果电脑上（OS X 10.9.2）利用octopress搭建一个github博客。<br /></p>
-
-<br />
-
-
-<p>1.准备工作<br />
-2.安装Git<br />
-3.安装Ruby<br />
-4.安装Octopress<br />
-5.将博客部署到Github上<br />
-6.配置Octopress<br /></p>
+<p>经过几天的时间，终于将一直想拥有的个人博客从空白搭建成现在的样子了。这期间，查了一些资料，也遇到了一些问题，总的来说，搭建还是挺方便的。下面，我将根据一下几个方面给大家讲述一下如何在苹果电脑上（OS X 10.9.2）利用octopress搭建一个github博客。<br/>
+1.准备工作<br/>
+2.安装Git<br/>
+3.安装Ruby<br/>
+4.安装Octopress<br/>
+5.将博客部署到Github上<br/>
+6.配置Octopress<br/>
+7.发表博文</p>
 
 <h2>1.准备工作</h2>
 
@@ -126,9 +123,9 @@
 
 <h2>3.安装Ruby</h2>
 
-<p>Octopress需要Ruby环境。RVM(Ruby Version Manager)负责安装和管理Ruby环境。我们可以利用RVM来轻松安装Ruby。<br />
-我们先在终端中输入<code>ruby --version</code>，来确认电脑上是否安装了ruby。我的电脑显示的是<code>ruby 2.0.0p451 (2014-02-24 revision 45167) [x86_64-darwin13.0.0]</code>。如果提示ruby没有安装或者ruby的版本低于1.9.3的话，我们需要安装1.9.3或者更高的版本。<br />
-我们在终端中输入以下命令：<br /></p>
+<p>Octopress需要Ruby环境。RVM(Ruby Version Manager)负责安装和管理Ruby环境。我们可以利用RVM来轻松安装Ruby。<br/>
+我们先在终端中输入<code>ruby --version</code>，来确认电脑上是否安装了ruby。我的电脑显示的是<code>ruby 2.0.0p451 (2014-02-24 revision 45167) [x86_64-darwin13.0.0]</code>。如果提示ruby没有安装或者ruby的版本低于1.9.3的话，我们需要安装1.9.3或者更高的版本。<br/>
+我们在终端中输入以下命令：</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>curl -L https://get.rvm.io | bash -s stable --ruby</span></code></pre></td></tr></table></div></figure>
@@ -144,7 +141,7 @@
 </span><span class='line'>rvm rubygems latest</span></code></pre></td></tr></table></div></figure>
 
 
-<p>之后，我们就可以在终端中输入<code>ruby --version</code>确认ruby1.9.3安装好了。<br />
+<p>之后，我们就可以在终端中输入<code>ruby --version</code>确认ruby1.9.3安装好了。<br/>
 参考：<a href="http://octopress.org/docs/setup/rvm/">Installing Ruby With RVM</a></p>
 
 <h2>4.安装Octopress</h2>
@@ -231,6 +228,21 @@
 当浏览自己博客的时候，会发现有些设置是我们不想要的，接下来我们就来配置一下octopress。</p>
 
 <h2>6.配置Octopress</h2>
+
+<p>一般情况下，我们只需要修改<code>_config.yml</code>文件来修改配置信息，我们可以在octopress文件夹下找到该文件。<br/>
+<code>_config.yml</code>文件中的url是必须要填写的，这个url就是我们博客的地址。我们还可以修改一下<code>title</code>、<code>subtitle</code>和<code>author</code>等等。<br/>
+简单地修改了配置信息之后，我们执行命令：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<p>就可以将博客部署到仓库中了。然后我们浏览博客就可以看到与之前的不同了。<br/>
+更多关于<code>_config.yml</code>的内容，请看：<a href="http://octopress.org/docs/configuring/">Configuring Octopress</a></p>
+
+<p>建议：最好把里面的twitter相关的信息全部删掉，否则由于GFW的原因，将会造成页面load很慢。同理，修改定制文件/source/_includes/custom/head.html 把google的自定义字体去掉。参考：<a href="http://blog.devtang.com/blog/2012/02/10/setup-blog-based-on-github/">唐巧的博文-配置</a></p>
 </div>
   
   
