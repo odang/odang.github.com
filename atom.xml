@@ -4,7 +4,7 @@
   <title><![CDATA[odang’s Blog]]></title>
   <link href="http://odang.github.io/atom.xml" rel="self"/>
   <link href="http://odang.github.io/"/>
-  <updated>2014-03-19T10:59:27+08:00</updated>
+  <updated>2014-03-19T11:11:43+08:00</updated>
   <id>http://odang.github.io/</id>
   <author>
     <name><![CDATA[odang]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[如何利用Octopress搭建一个Github博客]]></title>
+    <title type="html"><![CDATA[如何利用Octopress搭建一个Github]]></title>
     <link href="http://odang.github.io/blog/2014/03/18/ru-he-li-yong-octopressda-jian-%5B%3F%5D-ge-githubbo-ke/"/>
     <updated>2014-03-18T14:37:07+08:00</updated>
     <id>http://odang.github.io/blog/2014/03/18/ru-he-li-yong-octopressda-jian-[?]-ge-githubbo-ke</id>
@@ -170,6 +170,18 @@
 更多关于<code>_config.yml</code>的内容，请看：<a href="http://octopress.org/docs/configuring/">Configuring Octopress</a></p>
 
 <p>建议：最好把里面的twitter相关的信息全部删掉，否则由于GFW的原因，将会造成页面load很慢。同理，修改定制文件/source/_includes/custom/head.html 把google的自定义字体去掉。参考：<a href="http://blog.devtang.com/blog/2012/02/10/setup-blog-based-on-github/">唐巧的博文-配置</a></p>
+
+<h2>7.发表博文</h2>
+
+<p>捣腾了那么久，终于到了激动人心的时刻了，发表一篇博文庆祝一下吧。<br/>
+根据<a href="http://octopress.org/docs/blogging/">Blogging Basics</a>，我们知道博文必须放在<code>source/_posts</code>下，并且以<code>YYYY-MM-DD-post-title.markdown</code>进行了命名。<br/>
+我们在终端中输入如下命令来创建一篇新的博文：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_post["title"]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>其中，title是博文的文件名。</p>
 ]]></content>
   </entry>
   
