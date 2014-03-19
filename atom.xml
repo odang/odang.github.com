@@ -4,7 +4,7 @@
   <title><![CDATA[odang’s Blog]]></title>
   <link href="http://odang.github.io/atom.xml" rel="self"/>
   <link href="http://odang.github.io/"/>
-  <updated>2014-03-19T09:33:30+08:00</updated>
+  <updated>2014-03-19T09:36:02+08:00</updated>
   <id>http://odang.github.io/</id>
   <author>
     <name><![CDATA[odang]]></name>
@@ -36,11 +36,10 @@
 <p>1.先到github上注册帐号。注意：帐号名最后是会关联到博客的地址的。就比如我的github帐号是<code>odang</code>，我的博客地址是<code>odan.github.io</code>。<br/>
 2.帐号注册完之后，在自己的github主页上创建一个repositories(仓库)。在主页中点击如下图红色方框所示的选项。</p>
 
-<p><img src="http://odang.github.io/images/2014/03/21.png" title="create" alt="" /></p>
+<p><img src="http://odang.github.io/images/2014/03/1.png" alt="" /></p>
 
-<p><img src="http://odang.github.io/images/2014/03/21.png"></p>
-
-<p>跳转到另一页面之后，点击如下图红色方框所示的链接。</p>
+<p>跳转到另一页面之后，点击如下图红色方框所示的链接。
+<img src="http://odang.github.io/images/2014/03/2.png" alt="" /></p>
 
 <p>接下来我们就要为仓库命名了。注意这一步很容易出错。因为教程中跟我们讲的是仓库名要与自己的帐号名一致，一些人就仅仅填写了自己的帐号名而已，这样是不对的。正确的命名是：<code>你的帐号名.github.com</code>。就比如我的github帐号为<code>odang</code>，那么我起的仓库名称就应该是<code>odang.github.com</code>。<br/>
 仓库创建好之后，会得到一个ssh，就比如我的ssh为：<code>git@github.com:odang/odang.github.com.git</code>。我们可以将它copy下来，当然也可以不用这样做，因为在后面安装过程中终端会有提示。<br/>
